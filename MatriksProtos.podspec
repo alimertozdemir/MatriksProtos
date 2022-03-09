@@ -15,6 +15,7 @@ Pod::Spec.new do |spec|
   }
   spec.summary      = 'Matriks ObjectiveC Proto Classes '
   spec.source_files = "MatriksProtos/Symbol.pbobjc.{h,m}"
+  spec.public_header_files = "MatriksProtos/Symbol.pbobjc.h"
   spec.ios.deployment_target = '11.0'
 
   spec.requires_arc = true
