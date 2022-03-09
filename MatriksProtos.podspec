@@ -16,4 +16,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'Matriks ObjectiveC Proto Classes '
   spec.source_files = "MatriksProtos/Symbol.pbobjc.{h,m}"
   spec.ios.deployment_target = '11.0'
+
+  spec.dependency 'Protobuf'
+
 end
