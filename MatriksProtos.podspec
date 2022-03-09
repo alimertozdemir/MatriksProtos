@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://github.com/alimertozdemir/MatriksProtos'
   spec.source       = {
     :git => 'https://github.com/alimertozdemir/MatriksProtos.git',
-    :branch => 'master',
+    :branch => 'master'
   }
   spec.summary      = 'Matriks ObjectiveC Proto Classes '
   spec.source_files = "MatriksProtos/Symbol.pbobjc.{h,m}"
