@@ -1,0 +1,16 @@
+PODS:
+  - Protobuf (3.17.0)
+
+DEPENDENCIES:
+  - Protobuf
+
+SPEC REPOS:
+  trunk:
+    - Protobuf
+
+SPEC CHECKSUMS:
+  Protobuf: 7327d4444215b5f18e560a97f879ff5503c4581c
+
+PODFILE CHECKSUM: 190d450faed08ae3facd4a57b8ed83b86e493f88
+
+COCOAPODS: 1.9.3

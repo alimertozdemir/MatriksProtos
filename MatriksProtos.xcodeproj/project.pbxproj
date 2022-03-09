@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20BDCC38635EC2639472D3BF /* Pods_MatriksProtos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60852F608ABBFD3973A27A7 /* Pods_MatriksProtos.framework */; };
 		CCDDED2327D81897009E7FE8 /* MatriksProtos.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDDED2227D81897009E7FE8 /* MatriksProtos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCDDED3927D82A47009E7FE8 /* Symbol.proto in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED3627D82A46009E7FE8 /* Symbol.proto */; };
+		CCDDED3A27D82A47009E7FE8 /* Symbol.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED3727D82A46009E7FE8 /* Symbol.pbobjc.m */; };
+		CCDDED3B27D82A47009E7FE8 /* Symbol.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDDED3827D82A47009E7FE8 /* Symbol.pbobjc.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57C705EF6FFC8F8B04A052DB /* Pods-MatriksProtos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatriksProtos.release.xcconfig"; path = "Target Support Files/Pods-MatriksProtos/Pods-MatriksProtos.release.xcconfig"; sourceTree = "<group>"; };
+		6A0FCDA61944FA05BCD043A5 /* Pods-MatriksProtos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatriksProtos.debug.xcconfig"; path = "Target Support Files/Pods-MatriksProtos/Pods-MatriksProtos.debug.xcconfig"; sourceTree = "<group>"; };
 		CCDDED1F27D81897009E7FE8 /* MatriksProtos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatriksProtos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDDED2227D81897009E7FE8 /* MatriksProtos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatriksProtos.h; sourceTree = "<group>"; };
+		CCDDED3627D82A46009E7FE8 /* Symbol.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Symbol.proto; sourceTree = "<group>"; };
+		CCDDED3727D82A46009E7FE8 /* Symbol.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symbol.pbobjc.m; sourceTree = "<group>"; };
+		CCDDED3827D82A47009E7FE8 /* Symbol.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.pbobjc.h; sourceTree = "<group>"; };
+		F60852F608ABBFD3973A27A7 /* Pods_MatriksProtos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatriksProtos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,17 +30,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20BDCC38635EC2639472D3BF /* Pods_MatriksProtos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FAFFCB274A849A90D6993F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A0FCDA61944FA05BCD043A5 /* Pods-MatriksProtos.debug.xcconfig */,
+				57C705EF6FFC8F8B04A052DB /* Pods-MatriksProtos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CCDDED1527D81897009E7FE8 = {
 			isa = PBXGroup;
 			children = (
 				CCDDED2127D81897009E7FE8 /* MatriksProtos */,
 				CCDDED2027D81897009E7FE8 /* Products */,
+				6FAFFCB274A849A90D6993F3 /* Pods */,
+				CEAAE0BA8579713319FACC1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,9 +67,20 @@
 		CCDDED2127D81897009E7FE8 /* MatriksProtos */ = {
 			isa = PBXGroup;
 			children = (
+				CCDDED3827D82A47009E7FE8 /* Symbol.pbobjc.h */,
+				CCDDED3727D82A46009E7FE8 /* Symbol.pbobjc.m */,
+				CCDDED3627D82A46009E7FE8 /* Symbol.proto */,
 				CCDDED2227D81897009E7FE8 /* MatriksProtos.h */,
 			);
 			path = MatriksProtos;
+			sourceTree = "<group>";
+		};
+		CEAAE0BA8579713319FACC1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F60852F608ABBFD3973A27A7 /* Pods_MatriksProtos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -58,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDDED2327D81897009E7FE8 /* MatriksProtos.h in Headers */,
+				CCDDED3B27D82A47009E7FE8 /* Symbol.pbobjc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCDDED2627D81897009E7FE8 /* Build configuration list for PBXNativeTarget "MatriksProtos" */;
 			buildPhases = (
+				18C35E3983C779CECCF56D34 /* [CP] Check Pods Manifest.lock */,
 				CCDDED1A27D81897009E7FE8 /* Headers */,
 				CCDDED1B27D81897009E7FE8 /* Sources */,
 				CCDDED1C27D81897009E7FE8 /* Frameworks */,
@@ -124,11 +159,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18C35E3983C779CECCF56D34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatriksProtos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CCDDED1B27D81897009E7FE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDDED3A27D82A47009E7FE8 /* Symbol.pbobjc.m in Sources */,
+				CCDDED3927D82A47009E7FE8 /* Symbol.proto in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -255,6 +317,7 @@
 		};
 		CCDDED2727D81897009E7FE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0FCDA61944FA05BCD043A5 /* Pods-MatriksProtos.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -282,6 +345,7 @@
 		};
 		CCDDED2827D81897009E7FE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C705EF6FFC8F8B04A052DB /* Pods-MatriksProtos.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
