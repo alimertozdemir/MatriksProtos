@@ -17,6 +17,8 @@ Pod::Spec.new do |spec|
   spec.source_files = "MatriksProtos/Symbol.pbobjc.{h,m}"
   spec.ios.deployment_target = '11.0'
 
+  spec.requires_arc = true
+  spec.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 ' }
   spec.dependency 'Protobuf'
 
 end
